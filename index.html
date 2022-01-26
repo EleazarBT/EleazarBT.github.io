@@ -16,40 +16,42 @@
 
     <div class="container mt-5">
         <div class="text-center">
-            <h1>Envía mensajes sin agregar el número</h1>
+            <h1>Envía mensajes a WhatsApp sin agregar el número</h1>
         </div>
         <div class="row mt-5">
             <form name="number" class="input-group mb-3">
-                <select id="select1" class="form-select" aria-label="Default select example">
+                <select id="select1" class="form-select">
                     <option selected value="+51">Peru</option>
                     <option value="+56">Chile</option>
                     <option value="+1">EEUU</option>
                   </select>
-                <input name="numberInput" type="text" class="form-control" aria-label="Text input with dropdown button">
+                <input name="numberInput" type="text" class="form-control">
             </form>
             <div class="form-floating mt-3">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                 <label for="floatingTextarea2">Mensaje</label>
             </div>
             <div class="container mt-5 text-center">
-                <button id="LinkGenerate" class="btn btn-primary btn " onclick="getInputValue(document.number.numberInput);getOption();">
-                Generar link</button>
+                <button id="LinkGenerate" class="btn btn-primary btn " onclick="getInputValue(document.number.numberInput);">
+                Enviar Mensaje</button>
             </div>
-            <p> The value of the option selected is:
-                <span class="countrySimbol"></span>
-            </p>
-            <p> The value of the option selected is:
-                <span class="numberClear"></span>
-            </p>
+            <div class="container">
+                <p> The country selected is
+                    <span class="countrySimbol"></span>
+                </p>
+                <p> The WhatsApp number is
+                    <span class="numberClear"></span>
+                </p>
+                <p> The message is:
+                    <span class="message"></span>
+                </p>
+
+            </div>
         </div>
     </div>
 
-
-    <!-- Optional JavaScript; choose one of the two! -->
-    <script src="./main.js"></script>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
-
+    <!-- JavaScript -->
+    <script src="main.js"></script>
 
 </body>
 
