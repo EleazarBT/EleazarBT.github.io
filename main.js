@@ -25,4 +25,5 @@ function getMessage() {
 
 function generatelink(number, country, message) {
     window.location = "https://api.whatsapp.com/send/?phone=" + country + number + "&text=" + message;
+    //this is the link generator.
 }
