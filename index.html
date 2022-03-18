@@ -37,39 +37,37 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script
-      src="https://kit.fontawesome.com/5d3fcc545d.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/5d3fcc545d.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <div class="container mt-5 caca">
       <div class="text-center">
         <h1 class="title_header">
-          Send messages to strangers on
+          Envia mensajes sin agendar en 
           <span style="color: rgb(60, 255, 0)">
             <i class="fab fa-whatsapp"></i>
           </span>
         </h1>
       </div>
       <div class="row mt-5">
-        <form name="number" class="input-group mb-3">
+        <form name="number" class="input-group mb-3 " >
           <select id="select1" class="form-select">
             <option selected value="+51">Peru</option>
             <option value="+56">Chile</option>
             <option value="+1">EEUU</option>
           </select>
           <input name="numberInput" type="text" class="form-control" />
+          <span style="color: rgb(199, 196, 196); margin:0.3rem">
+          <i class="fa-solid fa-phone fa-2x "></i></span>
         </form>
         <div class="form-floating mt-3">
           <textarea
             class="form-control"
-            placeholder="Leave a comment here"
             id="floatingTextarea2"
             style="height: 100px"
           ></textarea>
-          <label for="floatingTextarea2">Optional Message</label>
+          <label for="floatingTextarea2">Mensaje opcional</label>
         </div>
         <div class="container mt-5 text-center">
           <button
@@ -77,7 +75,7 @@
             class="btn btn-light btn"
             onclick="getInputValue(document.number.numberInput);"
           >
-            Send Message
+            Enviar Mensaje
           </button>
         </div>
         <div class="container mt-5 d-flex justify-content-center">
